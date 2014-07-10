@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>לוח חכם לבית כנסת</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/jsignage.css" rel="stylesheet">
+
+		<script src="date/DATE.js" type="text/javascript"></script>
+		<script src="date/HOLIDAY.js" type="text/javascript"></script>
+		<script src="date/ZMANIM.js" type="text/javascript"></script>
+		<script src="date/PARASHA.js" type="text/javascript"></script>
+		<script src="date/GLOBAL.js" type="text/javascript"></script>
+		<script src="date/CITY_LOCATION.js" type="text/javascript"></script>
+		
+<!--		<script src="js/jquery.newsTicker.js" type="text/javascript"></script> -->
+		<script src="js/jsignage.js" type="text/javascript"></script>
+
+	</head>
+
+	<body onload="updateAll()">
+		<div class="container-fluid stretch" id="mainwrapper">
+			<!-- Example row of columns -->
+			<div class="row pagination-centered" id="header">
+				<h1 class="text-center">בית כנסת מבשר ציון - תל מונד</h1>
+			</div>
+
+			<div class="row" id="band">
+				<div class="col-md-4 top-header">
+					<span><h3 id="clock">00:00:00</h3></span>
+				</div>
+				<div class="col-md-4 top-header">
+					<span><h3 id="h-parasha">פרשת השבוע</h3></span>
+				</div>
+				<div class="col-md-4 top-header">
+					<span><h3 id="h-date">א תשרי</h3></span>
+				</div>
+			</div>
+			<div id="secondcontainer">
+				<div class="row stretch">
+					<div class="col-md-4 stretch">
+						<div class="panel panel-warning stretch" id="news-panel">
+							<div class="panel-heading" id="news-header">
+								<h2 class="panel-title text-center">חדשות וארועים</h2>
+							</div>
+							<div class="panel-body text-right">
+								<ul class="news-list"> 
+								<div id="news">עדכונים</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 stretch">
+						<div class="panel panel-warning stretch">
+							<div class="panel-heading">
+								<h2 class="panel-title text-center">שעורים</h2>
+							</div>
+							<div class="panel-body text-right">
+								<div id="shiurim">שעורים</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 stretch">
+						<div class="panel panel-warning" id="tfila-times">
+							<div class="panel-heading">
+								<h2 class="panel-title text-center">זמני תפילה</h2>
+							</div>
+							<div class="panel-body text-right">
+								<div id="tfilot">זמני תפילות</div>
+							</div>
+						</div>
+
+						<div class="panel panel-warning" id="day-times">
+							<div class="panel-heading">
+								<h2 class="panel-title text-center">זמני היום</h2>
+							</div>
+							<div class="panel-body text-right" id="zmanim-list">זמני היום</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class="text-left">
+					<p>מבשר ציון תשע"ד</p>
+				</div>
+			</footer>
+		</div>
+		<!-- /container -->
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+	</body>
+</html>

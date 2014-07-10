@@ -1,0 +1,94 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+html {
+	height: 100%;
+}
+body {
+	background: url('../img/wood.jpg') no-repeat center center fixed;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	font-family: 'EFT_Artzisraeli,Open Sans', Arial;
+}
+
+h1 {
+	font-family: 'EFT_Artzisraeli Bold';
+	text-shadow: 4px 4px #000000;
+	font-size: 450%;
+	color: #FFFFE0;
+}
+h2 {
+	font-family: 'EFT_Artzisraeli Bold';
+}
+h3, h4, h5, h6 {
+	font-family: 'EFT_Artzisraeli';
+}
+@font-face {
+	font-family: 'EFT_Artzisraeli';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/EFT_Artzisraeli.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'EFT_Artzisraeli Bold';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/EFT_Artzisraeli Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'EFT_Asaf Bold';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/EFT_Asaf Bold.ttf') format('truetype');
+}
+.panel-title {
+	font-size: 250%;
+}
+.panel-body {
+	font-size: 200%;
+	font-family: 'EFT_Asaf Bold';
+}
+.panel {
+	-moz-box-shadow: 10px 5px 15px rgba(0,0,0,.5);
+	-webkit-box-shadow: 10px 5px 15px rgba(0,0,0,.5);
+	box-shadow: 10px 5px 15px rgba(0,0,0,.5); /*10px is horizontal offset, 5px is vertical offset, 15px is blur radius and rgba(0,0,0,.5) is shadow color*/
+	background: #FFFFF9;
+	color: #000000;
+}
+
+.stretch {
+	height: 100%;
+}
+
+.top-header {
+	display: table;
+	margin-bottom: 10px;
+	height: 60px;
+	vertical-align: middle;
+	background: #B35900;
+	-moz-box-shadow: 10px 5px 15px rgba(0,0,0,.5);
+	-webkit-box-shadow: 10px 5px 15px rgba(0,0,0,.5);
+	box-shadow: 10px 5px 15px rgba(0,0,0,.5); /*10px is horizontal offset, 5px is vertical offset, 15px is blur radius and rgba(0,0,0,.5) is shadow color*/
+}
+.top-header span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: white
+}
+#marqueever
+{
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+}
+#marqueever div
+{
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
